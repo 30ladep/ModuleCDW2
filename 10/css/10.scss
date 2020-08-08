@@ -1,0 +1,124 @@
+$font_p: 14px;
+$height_banner: 80px;
+$opac_font: 0.8;
+$bg-att-body: #119d65;
+$color_icon: #a83332;
+$transition_all: all 0.3s ease;
+@mixin re-content($number) {
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.module10 {
+    .banner-header {
+        background-image: url("../images/dollar-941246-compressor.png");
+        height: $height_banner;
+        background-size: cover;
+        background-position: center;
+    }
+    .title-module {
+        background-color: #333e45;
+        h1 {
+            font-size: 20px;
+            color: white;
+        }
+    }
+    .link-page {
+        background-color: whitesmoke;
+        font-size: 13px;
+        opacity: $opac_font;
+    }
+    .body-module {
+        .double_border {
+            height: 5px;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            opacity: 0.2;
+        }
+        .announcements {
+            transition: $transition_all;
+            .icon-feddback {
+                color: $bg-att-body;
+            }
+            .feedback {
+                opacity: 0.6;
+            }
+            &:hover {
+                background-color: whitesmoke;
+                .feedback {
+                    transition: $transition_all;
+                    color: red;
+                }
+            }
+        }
+        .show-feedback {
+            .buton-show {
+                transition: $transition_all;
+                color: $color_icon;
+                cursor: pointer;
+                &:hover {
+                    color: black;
+                }
+            }
+            .content_extension {
+                font-size: 12px;
+                opacity: 0.6;
+            }
+        }
+
+        .content-body {
+            font-size: $font_p;
+            opacity: $opac_font;
+        }
+        .attention-body {
+            background-color: $bg-att-body;
+            color: white;
+            .attention-icon {
+                border-radius: 50%;
+            }
+            .attention-content {
+                @include re-content(3);
+            }
+            &::before {
+                content: "";
+                width: 0px;
+                height: 0px;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid white;
+                position: absolute;
+                top: -1px;
+                left: 0px;
+                right: 0px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .video-body {
+        font-size: $font_p;
+
+        .video-title {
+            background-color: whitesmoke;
+            font-weight: 500;
+            box-shadow: 0px 7px 2px -5px red;
+            border-radius: 5px;
+        }
+        .content-video {
+            .title-icon {
+                color: white;
+                border-radius: 50%;
+                padding: 15px 15px;
+            }
+        }
+        .description-video {
+            @include re-content(2);
+        }
+        .video-page {
+            margin-left: 10px;
+            font-size: $font_p;
+            opacity: 0.6;
+        }
+    }
+}

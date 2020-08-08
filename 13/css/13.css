@@ -1,0 +1,41 @@
+.module13 .banner-header {
+  background-image: url("../images/dollar-941246-compressor.png");
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+}
+
+.module13 .title-module {
+  background-color: #333e45;
+}
+
+.module13 .title-module h1 {
+  font-size: 20px;
+  color: white;
+}
+
+.module13 .link-page {
+  background-color: whitesmoke;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.module13 .body-module .content-module {
+  margin-left: 4em;
+  margin-right: 4em;
+  background-color: whitesmoke;
+}
+
+.module13 .body-module .content-module .buttonsection {
+  border-radius: 50%;
+  padding: 9px 11px;
+}
+
+.module13 .body-module .content-module .buttonsection-number {
+  border-radius: 50%;
+}
+
+.module13 .opaci-text {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=13.css.map */

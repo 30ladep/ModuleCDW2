@@ -1,0 +1,52 @@
+$font_p: 14px;
+$height_banner: 80px;
+$opac_font: 0.8;
+$bg-content-banner: rgba(168,51,50,.7);
+$color_icon:#a83332;
+$transition_all : all 0.3s ease;
+$border-rd : 50%;
+@mixin re-content($number) {
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.module13{
+    .banner-header{
+        background-image: url('../images/dollar-941246-compressor.png');
+        height: $height_banner;
+        background-size: cover;
+        background-position: center;
+    }
+    .title-module{
+        background-color: #333e45;
+        h1{
+            font-size: 20px;
+            color: white;
+        } 
+    }
+    .link-page{
+        background-color: whitesmoke;
+        font-size: 13px;
+        opacity: $opac_font;
+    }
+    .body-module{
+        .content-module{
+            margin-left: 4em;
+            margin-right: 4em;
+            background-color: whitesmoke;
+            .buttonsection{
+                border-radius: $border-rd;
+                padding: 9px 11px;
+            }
+            .buttonsection-number{
+                border-radius: $border-rd;
+            }
+        }
+        
+    }
+    .opaci-text{
+        opacity: $opac_font;
+    }
+}

@@ -1,0 +1,40 @@
+.style-1 {
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+            position: relative;
+            text-align: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    }
+}
+.swiper-button-all {
+    z-index: 1;
+    width: 500px;
+    height: auto;
+    top: 32%;
+    left: 50px;
+    background-color: rgba(47, 41, 43, 0.6);
+    display: block;
+    color: white;
+    .small-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.classtri {
+    top: 32%;
+}

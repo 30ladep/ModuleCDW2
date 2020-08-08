@@ -1,0 +1,52 @@
+@mixin re-content($number) {
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+$font-color: #a83332;
+$border-color: #e5e5e5;
+.module21 {
+    .box-icon-detail {
+        .icon-content {
+            border-bottom: 2px solid $font-color;
+            width: 150px;
+            margin: 0 auto 20px auto;
+            height: 93px;
+            overflow: hidden;
+            .icon-control {
+                transition: all 0.3s ease;
+                font-size: 3em;
+                margin: 0 auto;
+                left: 18%;
+                padding: 26px 21px;
+                background-color: whitesmoke;
+                border: 5px solid $border-color;
+                border-radius: 50%;
+                bottom: -44px;
+                color: $font-color;
+            }
+        }
+
+        &:hover {
+            .icon-control {
+                transition: all 0.5s ease;
+                background-color: $font-color;
+                color: white;
+                bottom: -20px;
+            }
+        }
+        .title-icon {
+            font-size: 19px;
+            color: black;
+            &:hover {
+                color: $font-color;
+            }
+        }
+        .content-icon {
+            font-weight: 100;
+            opacity: 0.9;
+            @include re-content(4);
+        }
+    }
+}

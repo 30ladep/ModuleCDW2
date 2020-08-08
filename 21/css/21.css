@@ -1,0 +1,48 @@
+.module21 .box-icon-detail .icon-content {
+  border-bottom: 2px solid #a83332;
+  width: 150px;
+  margin: 0 auto 20px auto;
+  height: 93px;
+  overflow: hidden;
+}
+
+.module21 .box-icon-detail .icon-content .icon-control {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 3em;
+  margin: 0 auto;
+  left: 18%;
+  padding: 26px 21px;
+  background-color: whitesmoke;
+  border: 5px solid #e5e5e5;
+  border-radius: 50%;
+  bottom: -44px;
+  color: #a83332;
+}
+
+.module21 .box-icon-detail:hover .icon-control {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #a83332;
+  color: white;
+  bottom: -20px;
+}
+
+.module21 .box-icon-detail .title-icon {
+  font-size: 19px;
+  color: black;
+}
+
+.module21 .box-icon-detail .title-icon:hover {
+  color: #a83332;
+}
+
+.module21 .box-icon-detail .content-icon {
+  font-weight: 100;
+  opacity: 0.9;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+/*# sourceMappingURL=21.css.map */
